@@ -2,3 +2,155 @@
 @use "../foundation/base" as *;
 @use "../foundation/mixin" as *;
 
+main {
+    .l-hero {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: $main-Color;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 95vh;
+            background-image: url(../../src/img/hero.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        &__textwrap {
+            position: absolute;
+            top: 50%;
+            transform: translate(0%, -50%);
+            z-index: 2;
+            left: 5%;
+
+            &-item01 {
+                width: 100%;
+                font-size: 3rem;
+                font-weight: bold;
+                background: white;
+                margin: 0 0 1rem 0;
+                padding: .3rem 2.5rem;
+
+                span {
+                    font-size: 6rem;
+                    color: $sub-Color1;
+                }
+            }
+
+            &-item02 {
+                width: 55%;
+                font-size: 2rem;
+                font-weight: bold;
+                background: white;
+                margin: 0 0 1rem 0;
+                padding: .3rem 1.5rem;
+            }
+
+            &-item03 {
+                width: 71%;
+                font-size: 2rem;
+                font-weight: bold;
+                background: white;
+                margin: 0 0 1rem 0;
+                padding: .3rem 1.5rem;
+            }
+        }
+
+        &__CV {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            z-index: 3;
+        }
+    }
+}
+
+.l-trouble {
+    width: 100%;
+    height: 85vh;
+    background: $main-Color;
+
+    &__imgwrap {
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+
+        &-img {
+            position: absolute;
+            top: -7rem;
+            z-index: 2;
+        }
+    }
+}
+
+.l-about {
+    width: 100%;
+    height: 100vh;
+    margin: 5rem 0;
+
+    &__wrap {
+        width: 80%;
+        margin: 0 auto;
+
+        &-ttl {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        &__imgtext {
+            width: 80%;
+            margin: 2rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+
+            span {
+                margin: 0 2rem 0 0;
+                width: 20%;
+
+                img {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    &__inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-top: 5rem;
+
+        &-img {
+            width: 50%;
+        }
+
+        &__textwrap {
+            width: 50%;
+            margin: 2vw 0 0 5vw;
+
+            &-ttl {
+                font-size: clamp(1.6rem, 3vw, 2.4rem);
+                letter-spacing: .3rem;
+                line-height: 3rem;
+                font-weight: bold;
+            }
+
+            &-text {
+                width: 100%;
+                font-size: clamp(.8rem, 10vw, 1.6rem);
+                line-height: 3.5rem;
+                letter-spacing: .3rem;
+                margin: 2rem 0 0 0;
+            }
+        }
+    }
+}

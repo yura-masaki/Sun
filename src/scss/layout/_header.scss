@@ -4,8 +4,59 @@
 
 
 ///--------------pc header start-----------------///
+.l-header {
+    width: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+    z-index: 999;
 
+    &__logo {
+        width: 10%;
+        padding: 0 0 0 5vw;
 
+        img {
+            width: 90%;
+        }
+    }
+
+    &__nav {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-item {
+            padding: 0 0 0 2vw;
+            font-size: 1rem;
+            letter-spacing: .1rem;
+            font-weight: bold;
+            white-space: nowrap;
+
+            a {
+                font-weight: bold;
+
+            }
+        }
+    }
+
+    &__inquiry {
+        height: 10vh;
+        width: 15%;
+
+        img {
+            width: 15%;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+    }
+}
 
 
 
