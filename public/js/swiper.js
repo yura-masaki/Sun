@@ -1,1 +1,1 @@
-new Swiper(".Menuslider",{spaceBetween:30,loop:!0,cssMode:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination"},mousewheel:!0,keyboard:!0});
+new Swiper(".voice-slider",{slidesPerView:3,loop:!0,autoplay:{delay:2500,disableOnInteraction:!1},spaceBetween:30,pagination:{el:".swiper-pagination",clickable:!0}});

@@ -1,0 +1,58 @@
+///--------------header strat-----------------///
+@use "../foundation/base" as *;
+@use "../foundation/mixin" as *;
+
+
+footer {
+    .l-footer {
+        width: 100%;
+        // background-image: url(../../src/img/footer.png);
+        // background-repeat: no-repeat;
+        // background-size: 100%;
+        position: relative;
+
+        &__wrap {
+            width: 100%;
+            position: relative;
+
+
+
+            img {
+                height: 70vh;
+                object-fit: cover;
+            }
+
+            &-ttl {
+                width: 35%;
+                height: 200px;
+                background: $sub-Color1;
+                background-color: transparent;
+                background-color: #f5a512a1;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                border-radius: 20px;
+
+                span {
+                    width: 100%;
+                    display: grid;
+                    place-items: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    font-size: 2rem;
+                    color: white;
+                    transform: translate(-50%, -50%);
+                    z-index: 2;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

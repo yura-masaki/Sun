@@ -1,18 +1,13 @@
-    const swiper = new Swiper(".Menuslider", {
-        spaceBetween: 30,
-        loop: true,
-        // autoplay: {
-        //     delay: 3500,
-        //     disableOnInteraction: false,
-        // },
-        cssMode: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        mousewheel: true,
-        keyboard: true,
-    });
+const swiper = new Swiper(".voice-slider", {
+    slidesPerView: 3,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
