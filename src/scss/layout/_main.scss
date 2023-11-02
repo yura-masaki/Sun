@@ -5,7 +5,7 @@
 main {
     .l-hero {
         width: 100%;
-        height: 90vh;
+        height: 95vh;
         position: relative;
         background: $main-Color;
 
@@ -19,7 +19,6 @@ main {
             background-image: url(../../src/img/hero.png);
             background-size: cover;
             background-repeat: no-repeat;
-            z-index: 1;
         }
 
         &__textwrap {
@@ -111,6 +110,19 @@ main {
                     padding: .3rem 1.5rem;
                 }
             }
+
+            &__CV {
+                width: 65%;
+                position: fixed;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 20%);
+                z-index: 3;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -120,38 +132,160 @@ main {
     background: $main-Color;
     height: 100%;
 
-    &__imgwrap {
-        width: 100%;
-        height: 100%;
+    &-ttl {
         position: relative;
-        z-index: 2;
+        width: 70%;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+        background: white;
+        border: 3px solid $sub-Color1;
+        border-radius: 50px;
+        transform: translate(0%, -50%);
 
-        &-pc {
-            width: 80%;
-            margin: 0 auto;
-            transform: translate(0, -7%);
-            z-index: 5;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            width: 75px;
+            height: 50px;
+            background: $sub-Color1;
+            transform: translate(-50%, 0%);
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+            z-index: 1;
         }
 
-        &-sp {
-            display: none;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -45px;
+            left: 50%;
+            width: 75px;
+            height: 50px;
+            background: white;
+            transform: translate(-50%, 0%);
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+            z-index: 2;
+        }
+    }
+
+    &__wrapper {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 5rem auto;
+
+        &__calc {
+            width: 45%;
+            height: auto;
+            background: white;
+            margin: 5rem 0;
+            border-radius: 30px;
+            position: relative;
+
+            &-img {
+                width: 40%;
+                margin: 0 auto;
+                position: absolute;
+                top: -5rem;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+
+            &-text {
+                width: 100%;
+                padding: 6rem 0 2rem 0;
+                text-align: center;
+                font-size: 1.6rem;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &-img {
+            width: 50%;
         }
     }
 
     @include sp {
-        &__imgwrap {
+        &-ttl {
             position: relative;
+            width: 75%;
+            font-size: 3.5vw;
+            font-weight: bold;
+            padding: 1.5rem;
+            text-align: center;
+            background: white;
+            border: 3px solid $sub-Color1;
+            border-radius: 50px;
+            transform: translate(0%, -50%);
 
-            &-pc {
-                display: none;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -30px;
+                left: 50%;
+                width: 60px;
+                height: 30px;
+                background: $sub-Color1;
+                transform: translate(-50%, 0%);
+                clip-path: polygon(50% 100%, 0 0, 100% 0);
+                z-index: 1;
             }
 
-            &-sp {
-                display: block;
-                width: 80%;
-                margin: 0 auto;
-                transform: translate(0, -2%);
-                z-index: 5;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -25px;
+                left: 50%;
+                width: 60px;
+                height: 30px;
+                background: white;
+                transform: translate(-50%, 0%);
+                clip-path: polygon(50% 100%, 0 0, 100% 0);
+                z-index: 2;
+            }
+        }
+
+
+        &__wrapper {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+
+            &-img {
+                width: 60%;
+                position: absolute;
+                bottom: 0;
+
+                &:nth-child(1) {
+                    top: 0;
+                    left: 0;
+                }
+
+                &:nth-child(2) {
+                    top: 13rem;
+                    right: 0;
+                }
+
+                &:nth-child(3) {
+                    top: 26rem;
+                    left: 0;
+                }
+
+                &:nth-child(4) {
+                    top: 39rem;
+                    right: 0;
+                }
+
+
             }
         }
     }
@@ -160,7 +294,7 @@ main {
 .l-about {
     width: 100%;
     width: 100%;
-    margin: 5rem 0;
+    margin: 5rem 0 10rem 0;
 
     &__wrap {
         width: 80%;
@@ -172,24 +306,26 @@ main {
         }
 
         &__imgtext {
-            width: 80vw;
+            width: 100%;
             margin: 2rem auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 3vw;
-            font-weight: bold;
 
-            span {
-                width: 10%;
-                margin: 0 1rem 0 0;
+            &-img {
+                width: 20%;
+            }
 
-                img {
-                    width: 90%;
-                }
+            &-text {
+                width: 20%;
+                margin: 0 0 0 2rem;
+                font-size: 2rem;
+                font-weight: bold;
             }
         }
     }
+
+
 
     &__inner {
         width: 100%;
@@ -228,33 +364,34 @@ main {
 
     @include sp {
         &__wrap {
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
 
             &-ttl {
-                font-size: 2rem;
+                font-size: 1.6rem;
                 text-align: center;
             }
 
             &__imgtext {
-                width: 50%;
+                width: 100%;
                 margin: 2rem auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 2rem;
-                font-weight: bold;
 
-                span {
-                    width: 50%;
-                    margin: 0 1rem 0 0;
+                &-img {
+                    width: 30%;
+                }
 
-                    img {
-                        width: 90%;
-                    }
+                &-text {
+                    width: 30%;
+                    margin: 0 0 0 1.5rem;
+                    font-size: 5vw;
+                    font-weight: bold;
                 }
             }
         }
+
 
         &__inner {
             width: 100%;
@@ -291,6 +428,7 @@ main {
         }
     }
 }
+
 
 .l-reason {
     width: 100%;
@@ -851,7 +989,7 @@ main {
 
             &-ttl {
                 font-size: 2.4rem;
-                margin-top: 1.2rem;
+                margin-top: .4rem;
             }
         }
 
@@ -874,6 +1012,10 @@ main {
             img {
                 width: 100%;
             }
+        }
+
+        .swiper {
+            display: none;
         }
     }
 
@@ -904,6 +1046,7 @@ main {
         }
 
         .swiper {
+            display: block;
             width: 100%;
             height: 100%;
 
