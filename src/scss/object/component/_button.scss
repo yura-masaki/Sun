@@ -1,3 +1,22 @@
 @use "../../foundation/base" as *;
 @use "../../foundation/mixin" as *;
 
+
+.c-CV__btn {
+    margin: 2rem;
+
+    &-text {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+        background: white;
+        transition: all .3s;
+        text-align: center;
+        color: $sub-Color1;
+
+        &:hover {
+            font-size: 1.1rem;
+            transition: all .3s;
+        }
+    }
+}

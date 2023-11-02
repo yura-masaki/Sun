@@ -18,13 +18,55 @@
         <div class="l-header">
             <div class="l-header__logo"><img src="./src/img/logo.png"></div>
             <div class="l-header__nav">
-                <div class="l-header__nav-item"><a href="">選ばれる3つの理由</a></div>
-                <div class="l-header__nav-item"><a href="">設置までの流れ</a></div>
-                <div class="l-header__nav-item"><a href="">設置の実績</a></div>
-                <div class="l-header__nav-item"><a href="">お客様の声</a></div>
-                <div class="l-header__nav-item"><a href="">よくある質問</a></div>
+                <div class="l-header__nav-item"><a href="#reason">選ばれる3つの理由</a></div>
+                <div class="l-header__nav-item"><a href="#flow">設置までの流れ</a></div>
+                <div class="l-header__nav-item"><a href="#Achievements">設置の実績</a></div>
+                <div class="l-header__nav-item"><a href="#voice">お客様の声</a></div>
+                <div class="l-header__nav-item"><a href="#question">よくある質問</a></div>
             </div>
             <div class="l-header__inquiry"><a href=""><img src="./src/img/inquiry.png"></a></div>
+        </div>
+    </header>
+    <header class="l-header__sp">
+        <div class="l-header__sp__wrap">
+            <div class="l-header__sp__wrap-logo">
+                <a href="">
+                    <img src="./src/img/logo.png">
+                </a>
+            </div>
+            <div class="l-header__sp__wrap__hum">
+                <div class="l-header__ham">
+                    <div class="l-header__ham-logo">
+                    </div>
+                    <input id="menu__toggle" type="checkbox">
+                    <label class="menu__btn" for="menu__toggle">
+                        <span class="menu__btn__bar"></span>
+                    </label>
+                    <div class="menu__content">
+                        <div class="menu__content-text">
+                            <a href="#reason"><span>選ばれる3つの理由</span></a>
+                        </div>
+                        <div class="menu__content-text">
+                            <a href="#flow"><span>設置までの流れ</span></a>
+                        </div>
+                        <div class="menu__content-text">
+                            <a href="#Achievements"><span>設置の実績</span></a>
+                        </div>
+                        <div class="menu__content-text">
+                            <a href="#voice"><span>お客様の声</span></a>
+                        </div>
+                        <div class="menu__content-text">
+                            <a href="#question"><span>よくある質問</span></a>
+                        </div>
+                        <a href="#">
+                            <div class="c-CV__btn">
+                                <div class="c-CV__btn-text">お問い合わせはこちら</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </header>
 
@@ -43,7 +85,12 @@
 
         <section class="l-trouble">
             <div class="l-trouble__imgwrap">
-                <div class="l-trouble__imgwrap-img"> <img src="./src/img/section.png"></div>
+                <div class="l-trouble__imgwrap-pc">
+                    <img src="./src/img/section.png">
+                </div>
+                <div class="l-trouble__imgwrap-sp">
+                    <img src="./src/img/section_sp.png">
+                </div>
             </div>
         </section>
         <section class="l-about">
@@ -74,7 +121,7 @@
             </div>
         </section>
 
-        <section class="l-reason">
+        <section class="l-reason" id="reason">
             <div class="l-reason__wrap">
                 <div class="l-reason__ttlwrap">
                     <div class="l-reason__ttlwrap-sub">Our Strength</div>
@@ -101,7 +148,6 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="l-reason__inner__left">
                 <div class="l-reason__inner__left__img">
@@ -143,98 +189,144 @@
         </section>
 
         <section class="l-support">
-            <div class="l-support__wrap">
-                <div class="l-support__wrap-ttl">太陽光発電・蓄電池の導入には<span>「補助金制度」</span>があります。</div>
-                <div class="l-support__wrap-text">
-                    太陽光発電・蓄電池の導入には、国や各自治体の補助金制度が利用できるケースが多くあります。
-                    太陽光発電や蓄電池の種類、事業規模や地域などによって補助される金額は異なり公募期間も異なっておりますが、
-                    弊社にてお客様に合わせた帆預金制度をご提案いたします。また、補助金制度に関しまして気になる点などございましたら、お気軽にお問い合わせくださいませ。
-                </div>
-
-                <div class="l-support__wrap-reduction">
-                    <img src="./src/img/reduction.png">
-                </div>
-        </section>
-
-        <section class="l-flow">
-            <div class="l-flow__wrap">
-                <div class="l-flow__ttlwrap">
-                    <div class="l-flow__ttlwrap-subttl">Work Flow</div>
-                    <div class="l-flow__ttlwrap-ttl">設置までの流れ</div>
-                </div>
-                <div class="l-flow__inner">
-                    <div class="l-flow__inner__list">
-                        <div class="l-flow__inner__list-item">
-                            お問い合わせ
-                            <div class="l-flow__inner__list-item-number">1</div>
-                        </div>
+            <div class="l-support__container">
+                <div class="l-support__wrap">
+                    <div class="l-support__wrap-ttl">太陽光発電・蓄電池の導入には<span>「補助金制度」</span>があります。</div>
+                    <div class="l-support__wrap-text">
+                        太陽光発電・蓄電池の導入には、国や各自治体の補助金制度が利用できるケースが多くあります。
+                        太陽光発電や蓄電池の種類、事業規模や地域などによって補助される金額は異なり公募期間も異なっておりますが、
+                        弊社にてお客様に合わせた帆預金制度をご提案いたします。また、補助金制度に関しまして気になる点などございましたら、お気軽にお問い合わせくださいませ。
                     </div>
 
-                    <div class="l-flow__inner__list">
-                        <div class="l-flow__inner__list-triangle"></div>
+                    <div class="l-support__wrap-reduction">
+                        <img src="./src/img/reduction.png">
                     </div>
-
-                    <div class="l-flow__inner__list">
-                        <div class="l-flow__inner__list-item">
-                            現地調査・お見積もり作成
-                            <div class="l-flow__inner__list-item-number">2</div>
-                        </div>
-                    </div>
-
-                    <div class="l-flow__inner__list">
-                        <div class="l-flow__inner__list-triangle"></div>
-                    </div>
-
-                    <div class="l-flow__inner__list">
-                        <div class="l-flow__inner__list-item">
-                            ご契約
-                            <div class="l-flow__inner__list-item-number">3</div>
-                        </div>
-                    </div>
-
-                    <div class="l-flow__inner__list">
-                        <div class="l-flow__inner__list-triangle"></div>
-                    </div>
-
-                    <div class="l-flow__inner__list">
-                        <div class="l-flow__inner__list-item">
-                            設置工事開始
-                            <div class="l-flow__inner__list-item-number">4</div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
 
+        <section class="l-flow" id="flow">
+            <div class="l-flow__container">
+                <div class="l-flow__wrap">
+                    <div class="l-flow__ttlwrap">
+                        <div class="l-flow__ttlwrap-subttl">Work Flow</div>
+                        <div class="l-flow__ttlwrap-ttl">設置までの流れ</div>
+                    </div>
+                    <div class="l-flow__inner">
+                        <div class="l-flow__inner__list">
+                            <div class="l-flow__inner__list-item">
+                                お問い合わせ
+                                <div class="l-flow__inner__list-item-number">1</div>
+                            </div>
+                        </div>
 
-        <section class="l-Achievements">
-            <div class="l-Achievements__wrap">
-                <div class="l-Achievements__wrap__ttlwrap">
-                    <div class="l-Achievements__wrap__ttlwrap-subttl">Installation Achievements</div>
-                    <div class="l-Achievements__wrap__ttlwrap-ttl">太陽光パネル・蓄電池設置実績</div>
+                        <div class="l-flow__inner__list">
+                            <div class="l-flow__inner__list-triangle"></div>
+                        </div>
+
+                        <div class="l-flow__inner__list">
+                            <div class="l-flow__inner__list-item">
+                                現地調査・お見積もり作成
+                                <div class="l-flow__inner__list-item-number">2</div>
+                            </div>
+                        </div>
+
+                        <div class="l-flow__inner__list">
+                            <div class="l-flow__inner__list-triangle"></div>
+                        </div>
+
+                        <div class="l-flow__inner__list">
+                            <div class="l-flow__inner__list-item">
+                                ご契約
+                                <div class="l-flow__inner__list-item-number">3</div>
+                            </div>
+                        </div>
+
+                        <div class="l-flow__inner__list">
+                            <div class="l-flow__inner__list-triangle"></div>
+                        </div>
+
+                        <div class="l-flow__inner__list">
+                            <div class="l-flow__inner__list-item">
+                                設置工事開始
+                                <div class="l-flow__inner__list-item-number">4</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="l-Achievements__wrap__imglist">
-                    <div class="l-Achievements__wrap__imglist-item">
-                        <img src="./src/img/Achievements03.png">
-                        <div class="l-Achievements__wrap__imglist-item-text">H様邸 太陽光パネルシステム設置工事</div>
+            </div>
+        </section>
+
+        <section class="l-Achievements" id="Achievements">
+            <div class="l-Achievements__container">
+                <div class="l-Achievements__wrap">
+                    <div class="l-Achievements__wrap__ttlwrap">
+                        <div class="l-Achievements__wrap__ttlwrap-subttl">Installation Achievements</div>
+                        <div class="l-Achievements__wrap__ttlwrap-ttl">太陽光パネル・蓄電池設置実績</div>
                     </div>
-                    <div class="l-Achievements__wrap__imglist-item">
-                        <img src="./src/img/Achievements04.png">
-                        <div class="l-Achievements__wrap__imglist-item-text">O様邸 太陽光パネルシステム・蓄電池設置工事</div>
+                    <div class="l-Achievements__wrap__imglist">
+                        <div class="l-Achievements__wrap__imglist-item">
+                            <img src="./src/img/Achievements03.png">
+                            <div class="l-Achievements__wrap__imglist-item-text">H様邸 太陽光パネルシステム設置工事</div>
+                        </div>
+                        <div class="l-Achievements__wrap__imglist-item">
+                            <img src="./src/img/Achievements04.png">
+                            <div class="l-Achievements__wrap__imglist-item-text">O様邸 太陽光パネルシステム・蓄電池設置工事</div>
+                        </div>
+                        <div class="l-Achievements__wrap__imglist-item">
+                            <img src="./src/img/Achievements02.png">
+                            <div class="l-Achievements__wrap__imglist-item-text">K様邸 太陽光パネルシステム・蓄電池設置工事</div>
+                        </div>
+                        <div class="l-Achievements__wrap__imglist-item">
+                            <img src="./src/img/Achievements01.png">
+                            <div class="l-Achievements__wrap__imglist-item-text">K様邸 蓄電池設置工事</div>
+                        </div>
                     </div>
-                    <div class="l-Achievements__wrap__imglist-item">
-                        <img src="./src/img/Achievements02.png">
-                        <div class="l-Achievements__wrap__imglist-item-text">K様邸 太陽光パネルシステム・蓄電池設置工事</div>
-                    </div>
-                    <div class="l-Achievements__wrap__imglist-item">
-                        <img src="./src/img/Achievements01.png">
-                        <div class="l-Achievements__wrap__imglist-item-text">K様邸 蓄電池設置工事</div>
+
+                    <div class="swiper Achievements-slider-sp">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="l-Achievements__slider">
+                                    <div class="l-Achievements__slider-img"><img src="./src/img/Achievements03.png"></div>
+                                    <div class="l-Achievements__slider__wrap">
+                                        <div class="l-Achievements__slider__wrap-ttl">H様邸 太陽光パネルシステム設置工事</div>
+                                        <div class="l-Achievements__slider__wrap-text"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="l-Achievements__slider">
+                                    <div class="l-Achievements__slider-img"><img src="./src/img/Achievements04.png"></div>
+                                    <div class="l-Achievements__slider__wrap">
+                                        <div class="l-Achievements__slider__wrap-ttl">O様邸 太陽光パネルシステム・蓄電池設置工事</div>
+                                        <div class="l-Achievements__slider__wrap-text"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="l-Achievements__slider">
+                                    <div class="l-Achievements__slider-img"><img src="./src/img/Achievements02.png"></div>
+                                    <div class="l-Achievements__slider__wrap">
+                                        <div class="l-Achievements__slider__wrap-ttl">K様邸 太陽光パネルシステム・蓄電池設置工事</div>
+                                        <div class="l-Achievements__slider__wrap-text"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="l-Achievements__slider">
+                                    <div class="l-Achievements__slider-img"><img src="./src/img/Achievements01.png"></div>
+                                    <div class="l-Achievements__slider__wrap">
+                                        <div class="l-Achievements__slider__wrap-ttl">O様邸 蓄電池設置工事</div>
+                                        <div class="l-Achievements__slider__wrap-text"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
                     </div>
                 </div>
         </section>
-
-        <section class="l-voice">
+        <section class="l-voice" id="voice">
             <div class="l-voice__wrap">
                 <div class="l-voice__wrap__ttlwrap">
                     <div class="l-voice__wrap__ttlwrap-subttl">Voice</div>
@@ -242,7 +334,6 @@
                 </div>
                 <div class="swiper voice-slider">
                     <div class="swiper-wrapper">
-
                         <div class="swiper-slide">
                             <div class="l-voice__slider">
                                 <div class="l-voice__slider-img"><img src="./src/img/voice01.png"></div>
@@ -302,12 +393,173 @@
                     </div>
                     <!-- <div class="swiper-pagination"></div> -->
                 </div>
+                <div class="swiper voice-slider-sp">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="l-voice__slider">
+                                <div class="l-voice__slider-img"><img src="./src/img/voice01.png"></div>
+                                <div class="l-voice__slider__wrap">
+                                    <div class="l-voice__slider__wrap-ttl">電気料金値上げの不安が解消されました。</div>
+                                    <div class="l-voice__slider__wrap-text">
+                                        太陽光発電は出勤料金の急激値上げなどの影響を受けにくく、
+                                        リスク回避のために導入を検討しました。
+                                        自家消費りつが高くなるようなパネルの提案もしていただき、
+                                        家計に優しくなりました。</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="l-voice__slider">
+                                <div class="l-voice__slider-img"><img src="./src/img/voice02.png"></div>
+                                <div class="l-voice__slider__wrap">
+                                    <div class="l-voice__slider__wrap-ttl">災害対策に導入する上での疑問に親身に寄り添ってくれました。
+                                    </div>
+                                    <div class="l-voice__slider__wrap-text">
+                                        停電などの非常時の対策として太陽光発電と蓄電池を検討していました。費用面の相談だけでなく、災害時の蓄電池のメリットや有効的な使い方など詳しく説明してくれました。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="l-voice__slider">
+                                <div class="l-voice__slider-img"><img src="./src/img/voice03.png"></div>
+                                <div class="l-voice__slider__wrap">
+                                    <div class="l-voice__slider__wrap-ttl">
+                                        ライススタイルに合わせたプランがありがたかったです。
+                                    </div>
+                                    <div class="l-voice__slider__wrap-text">
+                                        年間の電気使用量・屋根の耐久性など現地調査した上で最適なプランを提案いただきました。
+                                        また、どんな補助金を活用できるかしれたので、導入までスムーズに進められました。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="l-voice__slider">
+                                <div class="l-voice__slider-img"><img src="./src/img/voice04.png"></div>
+                                <div class="l-voice__slider__wrap">
+                                    <div class="l-voice__slider__wrap-ttl">
+                                        問い合わせ後の対応が早くスムーズでした。
+                                    </div>
+                                    <div class="l-voice__slider__wrap-text">
+                                        最近の電気料金のエアげで太陽光パネルの導入を検討していました。
+                                        問い合わせ後の導入趣味レーションや見積もり作成なども、スピーディーかつ丁寧に対応してくれました。
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+
         </section>
+
         <section class="l-question">
-            <div class="l-question__wrap">
-                <div class="l-question__ttlwrap">
-                    <div class="l-question__ttlwrap-subttl">Q&A</div>
-                    <div class="l-question__ttlwrap-ttl">よくある質問</div>
+            <div class="l-question__container">
+                <div class="l-question__wrap">
+                    <div class="l-question__ttlwrap" id="question">
+                        <div class="l-question__ttlwrap-subttl">Q&A</div>
+                        <div class="l-question__ttlwrap-ttl">よくある質問</div>
+                    </div>
+                    <div class="l-question__wrapper">
+                        <div class="l-question__wrapper-ttl">蓄電池太陽光について</div>
+                        <div class="l-question__wrapper__list">
+                            <div class="l-question__wrapper__list-item">蓄電池だけでどれくらい電気が使えますか。</div>
+                            <div class="l-question__wrapper__list__anser">
+                                <div class="l-question__wrapper__list__anser-text">
+                                    多くのご家庭で使われている約10kWhの容量のもので平均1日半となります。
+                                    ただ、日中に発電することを考慮するとそれ以上の電力が使用できることになります。</div>
+                            </div>
+                        </div>
+                        <div class="l-question__wrapper__list">
+                            <div class="l-question__wrapper__list-item">蓄電池を設置したら電気代は節約できますか？</div>
+                            <div class="l-question__wrapper__list__anser">
+                                <div class="l-question__wrapper__list__anser-text">
+                                    蓄電池の使い方は多く分けて2つあります。<br>
+                                    ①日中に太陽光で発電した電力を蓄電池に貯めて、夜間に使用する方法。<br>
+                                    ②夜間のやすい電力を蓄電裏に貯めて、日中に使用する方法。<br>
+                                    どちらが良いのかは各ご家庭の再喝スタイルで異なりますので、どちらが無駄なく電気を使用できるのかはご相談ください。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-question__wrapper__list">
+                            <div class="l-question__wrapper__list-item">導入にかかる費用はどれくらいですか？</div>
+                            <div class="l-question__wrapper__list__anser">
+                                <div class="l-question__wrapper__list__anser-text">
+                                    導入に掛かる費用については「本体価格」「設置工事費」「電気工事費」「材料費等」が掛かります。<br>
+                                    詳細については、ヒアリングや現地調査後、お見積りを出させていただきます。</div>
+                            </div>
+                        </div>
+                        <div class="l-question__wrapper__list">
+                            <div class="l-question__wrapper__list-item">現地調査は何時間かかりますか？</div>
+                            <div class="l-question__wrapper__list__anser">
+                                <div class="l-question__wrapper__list__anser-text">
+                                    設置のないようによって異なりますが、おおよそ1時間〜1時間半程度です。<br>
+                                    (設置する場所の構造、太陽光システム情報、配線状況等によって異なります。)</div>
+                            </div>
+                        </div>
+                        <div class="l-question__wrapper__list">
+                            <div class="l-question__wrapper__list-item">設置工事は何日かかりますか？</div>
+                            <div class="l-question__wrapper__list__anser">
+                                <div class="l-question__wrapper__list__anser-text">
+                                    基本的にはには半日〜1日をご相談いたします。<br>
+                                    ※設置される商品や基礎によっては、別日に分けさせていただきます。その場合、事前にご相談させていただきます。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-question__wrapper">
+                        <div class="l-question__wrapper-ttl">太陽光メンテナンスについて</div>
+                        <div class="l-question__wrapper__list">
+                            <div class="l-question__wrapper__list-item">点検やメンテナンスにはどれくらいの感覚でいいですか？</div>
+                            <div class="l-question__wrapper__list__anser">
+                                <div class="l-question__wrapper__list__anser-text">
+                                    パネルが設置されている環境条件（立地・屋根や野立て等の置き場・周囲の環境）、パネルの種類（多結晶・単結晶）によって点検やメンテナンスの頻度は異なります。<br>
+                                    一般的には、ねん1〜2のメンテナンス推奨及び環境整備（草刈り等）と定期点検の義務化が定められています。
+                                    パネルにおきなひび割れ、電圧や抵抗値に異常が見られる場合は早急に修理をする必要があります。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-question__wrapper__list">
+                            <div class="l-question__wrapper__list-item">点検やメンテナンスの費用はどのくらいかかりますか？</div>
+                            <div class="l-question__wrapper__list__anser">
+                                <div class="l-question__wrapper__list__anser-text">
+                                    点検、メンテナンスの費用については、パネルの枚数や面積、地域や現状の環境によって異なります。<br>
+                                    具体的な金額については、無料見積作成のため、現地調査に伺いますので、気になる点などありましたら、ぜひお問泡絵フォームよりご相談くださいませ。<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-question__wrapper__list">
+                            <div class="l-question__wrapper__list-item">日常的に自分でできる点検方法はありますか？</div>
+                            <div class="l-question__wrapper__list__anser">
+                                <div class="l-question__wrapper__list__anser-text">
+                                    パワーコンディショナー本体の汚れ、フィルターの目詰まり、異音や異臭などはご自身でも確認できます。<br>
+                                    また配線の破損・腐食がないか、モニターに異常が出ていないかを日々確認しておくと異常に気づきやす位です。高所作業は危険ですので、
+                                    セルフメンテナンスで気になることがあれば、いつでもご相談ください！
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-question__wrapper__list">
+                            <div class="l-question__wrapper__list-item">点検に掛かる時間はどのくらいですか？</div>
+                            <div class="l-question__wrapper__list__anser">
+                                <div class="l-question__wrapper__list__anser-text">
+                                    基本的には、30分〜1時間程度となります。<br>
+                                    もしも雨天等、パエんるが発電していないと正確な数値が出せないこともあるため、老婆愛によっては日程の変更をお願いしておりますので、ご了承くださいませ。</div>
+                            </div>
+                        </div>
+                        <div class="l-question__wrapper__list">
+                            <div class="l-question__wrapper__list-item">点検をせず放置して問題ありませんか？</div>
+                            <div class="l-question__wrapper__list__anser">
+                                <div class="l-question__wrapper__list__anser-text">
+                                    点検をしていないことによって、発電効率の低下や事故のリスクを高めるだけでなく、発火の恐れや、認定取消処分もあるため、しっかりと点検を実施することをオススメいたします。<br>
+                                    また、メーカー圃場等も使えないことになり損をしてしまいますので、定期的に行っていきましょう。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -324,6 +576,7 @@
         </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 

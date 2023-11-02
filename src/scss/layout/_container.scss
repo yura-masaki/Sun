@@ -1,0 +1,53 @@
+@use "../foundation/base" as *;
+@use "../foundation/mixin" as *;
+
+.l-question {
+    &__container {
+        max-width: calc(1000px + 2rem);
+        margin-inline: auto;
+        padding: 1rem;
+    }
+
+    @include sp {
+        max-width: 100%;
+        padding-inline: 1rem;
+    }
+}
+
+.l-Achievements {
+    &__container {
+        max-width: calc(1000px + 2rem);
+        margin-inline: auto;
+    }
+
+    @include sp {
+        padding: 0;
+
+    }
+}
+
+.l-flow {
+    &__container {
+        max-width: calc(1000px + 2rem);
+        margin-inline: auto;
+        padding: 1rem;
+
+        @include sp {
+            max-width: 100%;
+            padding-inline: 1rem;
+        }
+    }
+}
+
+.l-support {
+    &__container {
+        max-width: calc(1000px + 2rem);
+        margin-inline: auto;
+        padding: 1rem;
+
+        @include sp {
+            max-width: 100%;
+            padding-inline: 1rem;
+        }
+    }
+}

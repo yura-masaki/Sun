@@ -19,7 +19,10 @@ const webpackConfig = require('./webpack.config')
 const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
 
-
+gulp.task('webpack', function () {
+    return webpackStream(config.webpack, webpack)
+        .pipe(gulp.dest(config.js.dest));
+});
 
 function scss() {
     return gulp.src('./src/scss/style.scss', {

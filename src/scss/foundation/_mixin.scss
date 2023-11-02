@@ -1,6 +1,6 @@
-$pc: 1080px;
-$tab: 1079px;
-$sp: 800px;
+$pc: 1024px;
+// $tab: 1023px;
+$sp: 1023px;
 
 @mixin pc {
     @media screen and (max-width: ($pc)) {
@@ -8,11 +8,11 @@ $sp: 800px;
     }
 }
 
-@mixin tab {
-    @media screen and (min-width: ($tab)) {
-        @content;
-    }
-}
+// @mixin tab {
+//     @media screen and (min-width: ($tab)) {
+//         @content;
+//     }
+// }
 
 @mixin sp {
     @media screen and (max-width: ($sp)) {
