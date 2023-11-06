@@ -933,7 +933,7 @@ main .l-hero__CV {
 }
 .l-trouble-ttl {
   position: relative;
-  width: 70%;
+  width: 80%;
   font-size: 2rem;
   font-weight: bold;
   margin: 0 auto;
@@ -942,8 +942,8 @@ main .l-hero__CV {
   background: white;
   border: 3px solid #F5A512;
   border-radius: 50px;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -60%);
+          transform: translate(0%, -60%);
 }
 .l-trouble-ttl::after {
   content: "";
@@ -976,75 +976,46 @@ main .l-hero__CV {
 .l-trouble__wrapper {
   width: 90%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 5rem auto;
+  margin: 0 auto 5rem auto;
 }
-.l-trouble__wrapper__calc {
-  width: 45%;
-  height: auto;
-  margin: 5rem 0;
-  border-radius: 30px;
-  position: relative;
-  z-index: 2;
-}
-.l-trouble__wrapper__calc::after {
-  content: "";
-  position: absolute;
-  bottom: -1rem;
-  left: 0;
-  background: white;
-  border-radius: 20px;
+.l-trouble__wrapper-pcimg {
   width: 100%;
-  height: 250px;
-  z-index: -1;
-}
-.l-trouble__wrapper__calc-img {
-  width: 45%;
   margin: 0 auto;
 }
-.l-trouble__wrapper__calc-text {
+.l-trouble__wrapper-spimg {
+  display: none;
+}
+.l-trouble__wrapper-text {
   width: 100%;
   padding: 2rem 0 2rem 0;
   text-align: center;
   font-size: 1.4rem;
 }
-.l-trouble__wrapper__calc-text span {
+.l-trouble__wrapper-text span {
   font-weight: bold;
-}
-.l-trouble__wrapper-img {
-  width: 50%;
 }
 @media screen and (max-width: 1023px) {
   .l-trouble-ttl {
     position: relative;
-    width: 75%;
-    font-size: 3.5vw;
+    width: 80%;
+    font-size: 3vw;
     font-weight: bold;
-    padding: 1.5rem;
+    margin: 0 auto;
+    padding: 1.2rem;
     text-align: center;
     background: white;
     border: 3px solid #F5A512;
     border-radius: 50px;
-    -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -60%);
+            transform: translate(0%, -60%);
   }
   .l-trouble-ttl::after {
     content: "";
     position: absolute;
-    bottom: -30px;
+    bottom: -3vw;
     left: 50%;
-    width: 60px;
-    height: 30px;
+    width: 5vw;
+    height: 3vw;
     background: #F5A512;
     -webkit-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
@@ -1055,10 +1026,10 @@ main .l-hero__CV {
   .l-trouble-ttl::before {
     content: "";
     position: absolute;
-    bottom: -25px;
+    bottom: -2.4vw;
     left: 50%;
-    width: 60px;
-    height: 30px;
+    width: 5vw;
+    height: 3vw;
     background: white;
     -webkit-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
@@ -1067,12 +1038,15 @@ main .l-hero__CV {
     z-index: 2;
   }
   .l-trouble__wrapper {
-    width: 100%;
-    height: 100vh;
-    display: block;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto 2rem auto;
   }
-  .l-trouble__wrapper-img {
-    width: 60%;
+  .l-trouble__wrapper-pcimg {
+    display: none;
+  }
+  .l-trouble__wrapper-spimg {
+    display: block;
   }
 }
 
@@ -1490,7 +1464,7 @@ main .l-hero__CV {
     position: relative;
   }
   .l-support__wrap-reduction {
-    width: 20%;
+    width: 17vw;
     position: absolute;
     bottom: 0;
     -webkit-transform: translate(0%, 75%);
@@ -1499,19 +1473,19 @@ main .l-hero__CV {
   .l-support__wrap-ttl {
     width: 90%;
     border-radius: 50px;
-    padding: 0.5rem;
-    font-size: 0.8rem;
+    padding: 1rem;
+    font-size: 2.5vw;
     font-weight: bold;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
   }
   .l-support__wrap-ttl span {
-    font-size: 1.2rem;
+    font-size: 3.5vw;
   }
   .l-support__wrap-text {
     width: 80%;
     margin: 0 auto;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     line-height: 1.5rem;
     padding: 0 0 2.5rem 0;
   }
@@ -1524,6 +1498,11 @@ main .l-hero__CV {
   padding: 0 0 5rem 0;
   background: #FCEED0;
   position: relative;
+}
+@media screen and (max-width: 1023px) {
+  .l-flow {
+    margin-top: 0;
+  }
 }
 .l-flow::after {
   content: "";

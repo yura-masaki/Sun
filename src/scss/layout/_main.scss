@@ -134,7 +134,7 @@ main {
 
     &-ttl {
         position: relative;
-        width: 70%;
+        width: 80%;
         font-size: 2rem;
         font-weight: bold;
         margin: 0 auto;
@@ -143,7 +143,7 @@ main {
         background: white;
         border: 3px solid $sub-Color1;
         border-radius: 50px;
-        transform: translate(0%, -50%);
+        transform: translate(0%, -60%);
 
         &::after {
             content: "";
@@ -175,73 +175,51 @@ main {
     &__wrapper {
         width: 90%;
         height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 5rem auto;
+        margin: 0 auto 5rem auto;
 
-        &__calc {
-            width: 45%;
-            height: auto;
-            margin: 5rem 0;
-            border-radius: 30px;
-            position: relative;
-            z-index: 2;
-
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: -1rem;
-                left: 0;
-                background: white;
-                border-radius: 20px;
-                width: 100%;
-                height: 250px;
-                z-index: -1;
-            }
-
-            &-img {
-                width: 45%;
-                margin: 0 auto;
-            }
-
-            &-text {
-                width: 100%;
-                padding: 2rem 0 2rem 0;
-                text-align: center;
-                font-size: 1.4rem;
-
-                span {
-                    font-weight: bold;
-                }
-            }
+        &-pcimg {
+            width: 100%;
+            margin: 0 auto;
         }
 
-        &-img {
-            width: 50%;
+        &-spimg {
+            display: none;
+        }
+
+        &-text {
+            width: 100%;
+            padding: 2rem 0 2rem 0;
+            text-align: center;
+            font-size: 1.4rem;
+
+            span {
+                font-weight: bold;
+            }
         }
     }
+
 
     @include sp {
         &-ttl {
             position: relative;
-            width: 75%;
-            font-size: 3.5vw;
+            width: 80%;
+            font-size: 3vw;
             font-weight: bold;
-            padding: 1.5rem;
+            margin: 0 auto;
+            padding: 1.2rem;
             text-align: center;
             background: white;
             border: 3px solid $sub-Color1;
             border-radius: 50px;
-            transform: translate(0%, -50%);
+            transform: translate(0%, -60%);
 
             &::after {
                 content: "";
                 position: absolute;
-                bottom: -30px;
+                bottom: -3vw;
                 left: 50%;
-                width: 60px;
-                height: 30px;
+                width: 5vw;
+                height: 3vw;
                 background: $sub-Color1;
                 transform: translate(-50%, 0%);
                 clip-path: polygon(50% 100%, 0 0, 100% 0);
@@ -251,10 +229,10 @@ main {
             &::before {
                 content: "";
                 position: absolute;
-                bottom: -25px;
+                bottom: -2.4vw;
                 left: 50%;
-                width: 60px;
-                height: 30px;
+                width: 5vw;
+                height: 3vw;
                 background: white;
                 transform: translate(-50%, 0%);
                 clip-path: polygon(50% 100%, 0 0, 100% 0);
@@ -262,34 +240,18 @@ main {
             }
         }
 
-
         &__wrapper {
-            width: 100%;
-            height: 100vh;
-            display: block;
+            width: 90%;
+            height: 100%;
+            margin: 0 auto 2rem auto;
 
-            &-img {
-                width: 60%;
 
-                // &:nth-child(1) {
-                //     top: 0;
-                //     left: 0;
-                // }
+            &-pcimg {
+                display: none;
+            }
 
-                // &:nth-child(2) {
-                //     top: 13rem;
-                //     right: 0;
-                // }
-
-                // &:nth-child(3) {
-                //     top: 26rem;
-                //     left: 0;
-                // }
-
-                // &:nth-child(4) {
-                //     top: 39rem;
-                //     right: 0;
-                // }
+            &-spimg {
+                display: block;
             }
         }
     }
@@ -745,7 +707,7 @@ main {
             position: relative;
 
             &-reduction {
-                width: 20%;
+                width: 17vw;
                 position: absolute;
                 bottom: 0;
                 transform: translate(0%, 75%);
@@ -755,20 +717,20 @@ main {
             &-ttl {
                 width: 90%;
                 border-radius: 50px;
-                padding: .5rem;
-                font-size: .8rem;
+                padding: 1rem;
+                font-size: 2.5vw;
                 font-weight: bold;
                 transform: translate(0, -50%);
 
                 span {
-                    font-size: 1.2rem;
+                    font-size: 3.5vw;
                 }
             }
 
             &-text {
                 width: 80%;
                 margin: 0 auto;
-                font-size: .5rem;
+                font-size: .8rem;
                 line-height: 1.5rem;
                 padding: 0 0 2.5rem 0;
             }
@@ -784,6 +746,10 @@ main {
     padding: 0 0 5rem 0;
     background: $main-Color;
     position: relative;
+
+    @include sp {
+        margin-top: 0;
+    }
 
     &::after {
         content: "";
