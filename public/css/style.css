@@ -766,7 +766,7 @@ footer .l-footer__wrap-ttl span {
 }
 
 .l-hero__container {
-  max-width: calc(1000px + 2rem);
+  max-width: calc(800px + 2rem);
   margin-inline: auto;
   padding: 1rem;
 }
@@ -889,12 +889,16 @@ main .l-hero__textwrap-item03 {
   padding: 0.3rem 1.5rem;
 }
 main .l-hero__CV {
+  width: 60%;
   position: fixed;
   bottom: 0;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
   z-index: 3;
+}
+main .l-hero__CV img {
+  width: 100%;
 }
 @media screen and (max-width: 1023px) {
   main .l-hero__textwrap {
@@ -934,12 +938,12 @@ main .l-hero__CV {
     padding: 0.3rem 1.5rem;
   }
   main .l-hero__CV {
-    width: 65%;
+    width: 100vw;
     position: fixed;
     bottom: 0;
     left: 50%;
-    -webkit-transform: translate(-50%, 20%);
-            transform: translate(-50%, 20%);
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
     z-index: 3;
   }
   main .l-hero__CV img {
@@ -1479,7 +1483,7 @@ main .l-hero__CV {
 }
 @media screen and (max-width: 1023px) {
   .l-support__wrap {
-    margin: 10rem auto;
+    margin: 8rem auto 10rem auto;
     background: #FCEED0;
     border-radius: 20px;
     position: relative;

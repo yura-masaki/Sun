@@ -62,11 +62,16 @@ main {
         }
 
         &__CV {
+            width: 60%;
             position: fixed;
             bottom: 0;
             left: 50%;
             transform: translate(-50%, 0%);
             z-index: 3;
+
+            img {
+                width: 100%;
+            }
         }
 
 
@@ -112,11 +117,11 @@ main {
             }
 
             &__CV {
-                width: 65%;
+                width: 100vw;
                 position: fixed;
                 bottom: 0;
                 left: 50%;
-                transform: translate(-50%, 20%);
+                transform: translate(-50%, -0%);
                 z-index: 3;
 
                 img {
@@ -701,7 +706,7 @@ main {
 
     @include sp {
         &__wrap {
-            margin: 10rem auto;
+            margin: 8rem auto 10rem auto;
             background: $main-Color;
             border-radius: 20px;
             position: relative;
