@@ -1327,7 +1327,7 @@ main .l-hero__CV img {
 }
 @media screen and (max-width: 1023px) {
   .l-reason__ttlwrap {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     padding: 1.2rem;
@@ -1349,7 +1349,7 @@ main .l-hero__CV img {
     font-size: 1.6rem;
   }
   .l-reason__inner__left {
-    width: 90%;
+    width: 85%;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -1367,6 +1367,7 @@ main .l-hero__CV img {
     margin: 5rem auto;
   }
   .l-reason__inner__left__img img {
+    border-radius: 30px;
     width: 100%;
   }
   .l-reason__inner__left__img-pc {
@@ -1397,7 +1398,7 @@ main .l-hero__CV img {
     margin-top: 1rem;
   }
   .l-reason__inner__right {
-    width: 90%;
+    width: 85%;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -2158,6 +2159,7 @@ main .l-hero__CV img {
             transform: translate(0, -50%);
     background: #F5A512;
     border-radius: 50px;
+    max-width: 100%;
   }
   .l-question__wrapper__list {
     width: 90%;
