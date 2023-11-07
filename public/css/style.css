@@ -1458,7 +1458,6 @@ main .l-hero__CV {
   border-radius: 50px;
   padding: 1.5rem;
   font-size: 1.2rem;
-  font-weight: 700;
   margin: 0 auto;
   letter-spacing: 0.1rem;
   background: #F5A512;
@@ -1469,6 +1468,7 @@ main .l-hero__CV {
 }
 .l-support__wrap-ttl span {
   font-size: 2rem;
+  font-weight: bold;
 }
 .l-support__wrap-text {
   width: 70%;
@@ -1496,7 +1496,6 @@ main .l-hero__CV {
     border-radius: 50px;
     padding: 1rem;
     font-size: 1rem;
-    font-weight: bold;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
     word-break: keep-all;
@@ -1699,7 +1698,7 @@ main .l-hero__CV {
 .l-Achievements {
   width: 100%;
   height: 100%;
-  margin: 8rem 0;
+  margin: 7.5rem 0;
 }
 .l-Achievements__wrap__ttlwrap {
   width: 80%;
