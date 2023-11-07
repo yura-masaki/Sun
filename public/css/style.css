@@ -1714,7 +1714,6 @@ main .l-hero__CV {
 .l-Achievements__wrap__ttlwrap-ttl {
   font-size: 2.4rem;
   margin-top: 0.4rem;
-  word-break: keep-all;
 }
 .l-Achievements__wrap__imglist {
   display: grid;
