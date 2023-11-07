@@ -8,16 +8,16 @@ $(".l-question__wrapper__list").on("click", function (e) {
     }
 });
 
-//ハンバーガーメニュー
-function toggleNav() {
-    const body = document.body;
-    const hamburger = document.getElementById("js_hamburger");
-    const overlay = document.getElementById("js_overlay");
-    hamburger.addEventListener("click", function () {
-        body.classList.toggle("nav_open"); //クラスが含まれていれば削除、含まれていなければ追加する
+$(function () {
+    // ハンバーガーボタンクリックで実行
+    $(".l-drawer__button").click(function () {
+        $(this).toggleClass("active");
+        $(".l-drawer__nav").toggleClass("active");
     });
-    overlay.addEventListener("click", function () {
-        body.classList.remove("nav_open"); //クラスを削除する
+
+    $(".l-drawer__nav__link").click(function () {
+        $(".l-drawer__button").removeClass("active");
+        $(".l-drawer__nav").removeClass("active");
     });
-}
-toggleNav();
+
+});
