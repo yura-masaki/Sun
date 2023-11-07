@@ -62,7 +62,7 @@ main {
         }
 
         &__CV {
-            width: 60%;
+            width: 40%;
             position: fixed;
             bottom: 0;
             left: 50%;
@@ -117,11 +117,12 @@ main {
             }
 
             &__CV {
-                width: 100vw;
+                width: 100%;
                 position: fixed;
                 bottom: 0;
                 left: 50%;
-                transform: translate(-50%, -0%);
+                padding: 1rem;
+                transform: translate(-50%, 0%);
                 z-index: 3;
 
                 img {

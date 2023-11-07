@@ -889,7 +889,7 @@ main .l-hero__textwrap-item03 {
   padding: 0.3rem 1.5rem;
 }
 main .l-hero__CV {
-  width: 60%;
+  width: 40%;
   position: fixed;
   bottom: 0;
   left: 50%;
@@ -938,10 +938,11 @@ main .l-hero__CV img {
     padding: 0.3rem 1.5rem;
   }
   main .l-hero__CV {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     bottom: 0;
     left: 50%;
+    padding: 1rem;
     -webkit-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
     z-index: 3;
