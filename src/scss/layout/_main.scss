@@ -902,6 +902,7 @@ main {
                     outline: 1px dotted black;
                     outline-offset: -7px;
                     border-radius: 20px;
+                    word-break: keep-all;
 
                     &-number {
                         content: "1";

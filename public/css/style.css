@@ -1660,6 +1660,7 @@ main .l-hero__CV img {
     outline: 1px dotted black;
     outline-offset: -7px;
     border-radius: 20px;
+    word-break: keep-all;
   }
   .l-flow__inner__list-item-number {
     content: "1";
